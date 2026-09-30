@@ -1,0 +1,18 @@
+# Core framework
+fastapi>=0.115.0
+uvicorn[standard]>=0.30.0
+python-multipart>=0.0.9     # required for UploadFile / Form parsing
+
+# Data validation
+pydantic>=2.7.0
+pydantic-settings>=2.3.0
+
+# Oracle (same thin-mode driver as gctst-backend-new)
+oracledb>=2.3.0
+
+# AWS S3 (optional — only needed when storage_strategy includes s3)
+boto3>=1.34.0
+botocore>=1.34.0
+
+# Utilities
+python-dotenv>=1.0.0        # .env file loading
